@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Introduction to JavaScript Task</h2>
+<p>Frontend Development - Javascript Module</p>
+
+<p id="demo"></p>
+
+<script>
+// Create and assign objects:
+const person = {
+  fName: "Benjamin Joseph",
+  height: "5ft 3inch",
+  country: "Nigeria",
+  fullName: function() {
+    return this.fName + " of height " + this.height + " from " + this.country;
+  }
+};
+
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>
